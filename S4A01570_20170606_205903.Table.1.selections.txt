@@ -1,0 +1,4 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Delta Time (s)	Delta Freq (Hz)	Avg Power Density (dB FS)	Annotation
+1	Spectrogram 1	2	3.144658193	3.526110814	1297.3	3057.9	0.381	1760.6	-75.5	SWTH call
+2	Spectrogram 1	2	23.805794422	25.489768188	3846.9	6028.7	1.684	2181.8	-83.4	WTSP song
+3	Spectrogram 1	1	37.800273454	38.926023873	1148.3	4019.1	1.126	2870.8	-78.7	SWTH song

@@ -1,0 +1,14 @@
+pkLocationID,fldLocationName,fldLocationNameAbbreviation,fldLatitude,fldLongitude,fldDatum,fldLocationType
+1,Wagner_Stand_33_Loc_7,WS33L7,45.1389,-70.6003,WGS84,Site
+2,Xeno-canto,XC,43.69612,-72.31952,WGS84,Template
+3,Wagner_Stand_43_Loc_4,WS43L4,45.17532,-70.81057,WGS84,Site
+4,Wagner_Stand_35_Loc_9,WS35L9,45.1446,-70.59199,WGS84,Site
+5,Wagner_Stand_41_Loc_5,WS41L5,45.17152,-70.78437,WGS84,Site
+6,Wagner_Stand_46_Loc_1,WS46L1,45.17995,-70.80576,WGS84,Site
+7,Wagner_Stand_33_Loc_13,W33L13,45.13859,-70.5997,WGS84,Site
+8,"Wagner_Stand_34_Loc_10	",W34L10,45.14418,-70.58996,WGS84,Site
+9,Wagner_Stand_43_Loc_6,WS43L6,45.17641,-70.81302,WGS84,Site
+10,Wagner_Stand_28_Loc_8,WS28L8,45.13898,-70.59438,WGS84,Site
+11,Wagner_Stand_43_Loc_12,W43L12,45.17519,-70.80894,WGS84,Site
+12,Wagner_Stand_44_Loc_2,WS44L2,45.17847,-70.80443,WGS84,Site
+13,Wagner_Stand_28_Loc_11,W28L11,45.13918,-70.59271,WGS84,Site

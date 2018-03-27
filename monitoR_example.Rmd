@@ -1,0 +1,47 @@
+---
+title: "monitoR Example"
+author: "John D Lloyd"
+date: "9/18/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Retrieve BTNW data
+
+```{r}
+library(monitoR)
+library(RODBC)
+data(btnw)
+summary(btnw)
+```
+
+## Create the Template
+
+```{r}
+b4 <- makeBinTemplate(
+  btnw, 
+  frq.lim = c(2, 8), 
+  select = "auto", 
+  name = "b4", 
+  buffer = 4, 
+  amp.cutoff = -31, 
+  binary = TRUE, 
+  write.wav = TRUE)
+```
+
+```{r}
+dbUploadTemplate(
+  templates = b4,
+  uid = "root",
+  db.name = "noh",
+  analyst = 1, 
+  locationID = "2", 
+  date.recorded = "2012/05/22", 
+  recording.equip = "SM2", 
+  species.code = "BTNW", 
+  type = "BIN")
+```
+

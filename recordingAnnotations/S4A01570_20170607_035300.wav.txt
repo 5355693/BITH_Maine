@@ -1,0 +1,7 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Delta Time (s)	Delta Freq (Hz)	Avg Power Density (dB FS)	Annotation
+1	Spectrogram 1	2	1.107075901	4.533739404	1727.6	5930.0	3.427	4202.3	-73.6	FOSP song
+2	Spectrogram 1	2	4.679382689	7.288918741	1156.0	7486.2	2.610	6330.3	-77.3	SWTH song
+3	Spectrogram 1	1	9.289235140	11.081643741	2807.3	6715.6	1.792	3908.3	-81.5	MAWA song
+4	Spectrogram 1	1	24.013973666	28.787657728	2587.2	5449.5	4.774	2862.4	-58.5	WTSP song
+7	Spectrogram 1	2	35.767092187	37.684027354	7321.1	9302.8	1.917	1981.7	-87.7	BLPW song
+8	Spectrogram 1	2	1931.218798768	1971.837940753	120.0	1680.0	40.619	1560.0	-76.1	Coyotes

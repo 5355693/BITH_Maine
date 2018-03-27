@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Delta Time (s)	Delta Freq (Hz)	Avg Power Density (dB FS)	Annotation
+1	Spectrogram 1	1	6.190185972	7.223890520	2930.2	6465.1	1.034	3534.9	-66.8	MAWA song
+2	Spectrogram 1	1	17.180007745	18.588773235	2971.4	5085.7	1.409	2114.3	-74.7	WTSP song
+3	Spectrogram 1	1	57.611971348	58.243171470	628.6	3828.6	0.631	3200.0	-61.6	SWTH call
+4	Spectrogram 1	1	243.404005532	245.718405980	2342.9	7371.4	2.314	5028.6	-65.9	NOWA song
