@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"monitoR Example\"\nauthor: \"John D Lloyd\"\ndate: \"9/18/2017\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## Retrieve BTNW data\n\n```{r}\nlibrary(monitoR)\nlibrary(RODBC)\ndata(btnw)\nsummary(btnw)\n```\n\n## Create the Template\n\n```{r}\nb4 <- makeBinTemplate(\n  btnw, \n  frq.lim = c(2, 8), \n  select = \"auto\", \n  name = \"b4\", \n  buffer = 4, \n  amp.cutoff = -31, \n  binary = TRUE, \n  write.wav = TRUE)\n```\n\n```{r}\ndbUploadTemplate(\n  templates = b4,\n  uid = \"root\",\n  db.name = \"noh\",\n  analyst = 1, \n  locationID = \"2\", \n  date.recorded = \"2012/05/22\", \n  recording.equip = \"SM2\", \n  species.code = \"BTNW\", \n  type = \"BIN\")\n```\n\n",
+    "created" : 1505766298157.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3426177675",
+    "id" : "556188C3",
+    "lastKnownWriteTime" : 1505767446,
+    "last_content_update" : 1505767446786,
+    "path" : "~/GitHub/BITH_Maine/monitoR_example.Rmd",
+    "project_path" : "monitoR_example.Rmd",
+    "properties" : {
+        "last_setup_crc32" : "",
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

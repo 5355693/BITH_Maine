@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "## The out-of-the-box version of RODBC has a 65535-byte limit on transfers.\n## For these giant concatenated columns in the tblTemplate, this ends up cutting \n## off part of the field. \n## To solve this, I had to fork the RODBC repo, comment out the offending line (it was line 741)\n## and then reinstall my forked version using devtools. Even with this change, the buffer \n## was too small so I had to tell RODBC to only download 1 row at a time.\n\n## Use this after forking and changing RODBC:\n###devtools::install_github(\"5355693/RODBC\")\n\nbith <- dbDownloadTemplate(db.name = \"noh\", uid = \"root\", pwd = \"RSW4xN!!\", type = \"COR\",\n                   species = \"BITH\", rows_at_time = 1)\nlist.files(path = \"/Volumes/Untitled\")\nviewSpec(clip = \"/Volumes/Untitled/W33L13_2017-06-05_205800_EDT.wav\", \n         interactive = TRUE, frq.lim = c(1,15), spec.col = gray.2(),\n         annotate = TRUE)\n\ncscores <-corMatch(survey = \"/Volumes/Untitled/W33L13_2017-06-05_205800_EDT.wav\",\n                   templates = bith,\n                   parallel = T, show.prog = TRUE, cor.method = \"pearson\")\ncscores \ncdetects <- findPeaks(score.obj = cscores, parallel = T)\ncdetects\nplot(cdetects, ask = FALSE, t.each = 300)\ngetDetections(cdetects)\n\n\n",
+    "created" : 1507145858241.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2313218263",
+    "id" : "2D247661",
+    "lastKnownWriteTime" : 1507145881,
+    "last_content_update" : 1507145881825,
+    "path" : "~/GitHub/BITH_Maine/templateDownload.R",
+    "project_path" : "templateDownload.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
